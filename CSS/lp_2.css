@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* デスクトップ, 1199px 以下*/
+@media (min-width: 1199px) {
+   
+}
+
+/*タブレット, 991px 以下*/
+@media (min-width: 991px) {
+    
+}
+
+/* 横向きモバイル, 767px 以下*/
+@media (max-width: 767px) {
+}
+
+/* 縦向きモバイル, 575px 以下*/
+@media (max-width: 575px) {
+}
+
+/* 画面幅が大きすぎると、サイト自体が見づらくなるので、
+<body>タグに
+max-width:1200px; 
+margin:0 auto;
+を指定⇨1200px以上の画面幅では拡大しなくなり、見やすい */
+
+body{
+    max-width:1200px; 
+margin:0 auto;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 767px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+@media screen and (min-width: 768px) { ウィンドウ幅が767px以上の場合に適用
+
+.title{
+    width: 100%;
+    /* height:118px; */
+}
+
+.title img{
+    width: 100%;
+    /* height:150px; */
+}
+
+.customer{
+    width: 100%;
+    /* height: 1030px; */
+    background-color: blanchedalmond;
+    
+   
+}
+.customer-2{
+        /* width: 40%; */
+    /* height: 500px; */
+    padding: 30px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.customer img{
+    width: 35%;
+    
+    /* height: 500px; */
+    
+    padding: 5px 5px;
+}
+
+.customer-space{
+    width: 100%;
+    /* height: 50px; */
+    background-color: blanchedalmond;
+}
+.pr{
+    position: relative;
+    width: 100%;
+    /* height: 1000px; */
+    background-color: blanchedalmond;
+}
+
+.pr-img img{
+    width: 100%;
+    /* height: 1000px; */
+}
+
+.pr-tel img{
+    position:absolute;
+    width: 38%;
+    left: 18%;
+    top: 50%;
+}
+
+
+.pr-mail img{
+    position:absolute;
+    width:45%;
+    /* height:200px; */
+    left: 16%;
+    top: 71%;
+}
+
+.question{
+    width:100%;
+    /* height:840px; */
+    background-image: url("../img/pc/bg.png");
+    padding:40px 0;
+}
+.question-1{
+    width:90%;
+    /* height:820px; */
+    border: solid 3px #e74e6f;
+    background-color: white;
+    margin: 0 auto; 
+
+}
+    
+
+
+.question-1 img{
+    width:90%;
+    /* height:760px; */
+    padding: 25px 100px 25px 60px;
+    /* margin: 30px 0 30px 50px; */
+}
+
+.service{
+    width: 100%;
+    /* height: 1000px; */
+    background-color: blanchedalmond;
+    
+}
+.service-1{
+    width: 100%;
+    /* height: 1000px; */
+    background-color: blanchedalmond;
+    /* margin: 0 auto; */
+    
+}
+.service-1 img{
+    width: 90%;
+    /* height: 1000px; */
+    background-color: blanchedalmond;
+    margin: 0 50px;
+}
+
+.service_info{
+    width: 100%;
+    padding: 40px 0;
+    
+}
+
+
+
+
+.fotter-bottom{
+    
+    width: 100%;
+    background-color: rgb(39, 41, 40);
+    color:white;
+    font-size: 14px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+
+}
+}
+
+
+/* 以下スマホのレスポンシブ */
+/* ウィンドウ幅が0〜767pxの場合に適用するCSS */
+@media screen and (max-width: 767px)
+{   
+    .title{
+        width: 100%;
+        /* height:118px; */
+    }
+    
+    .title img{
+        width: 100%;
+        /* height:150px; */
+    }
+
+    .service{
+        width: 100%;
+        /* height: 1000px; */
+        background-color: blanchedalmond;
+        
+    }
+    .service-1{
+        width: 100%;
+        /* height: 1000px; */
+        background-color: blanchedalmond;
+        /* margin: 0 auto; */
+        position: relative;
+    }
+    .service-1 img{
+        
+        width: 90%;
+        /* height: 1000px; */
+        background-color: blanchedalmond;
+        margin: 0 20px;
+    }
+    
+    .service_info{
+        width: 100%;
+        padding: 7px 0;
+        
+    }
+
+    .sp-text{
+        position: absolute;
+        width: 57%;
+        top: 35%;
+        left: 31%;
+        font-size: 10px;
+        line-height: 21px;
+        color: rgb(92, 86, 86);
+        font-family: monospace;
+    }
+
+    .fotter-bottom{
+        width: 100%;
+        background-color: rgb(39, 41, 40);
+        color: white;
+        font-size: 5px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .pr{
+    position: relative;
+    width: 100%;
+    /* height: 1000px; */
+    background-color: blanchedalmond;
+}
+
+.pr-img img{
+    width: 100%;
+    /* height: 1000px; */
+}
+
+.pr-tel img{
+    position:absolute;
+    width: 68%;
+    left: 18%;
+    top: 49%;
+}
+
+
+.pr-mail img{
+    position:absolute;
+    width: 78%;
+     /* height: 200px; */
+    left: 11%;
+    top: 73%;
+}
+
+.lowcost{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    /* height: 1700px; */
+    padding: 10px 10px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 19px;
+    border: solid 3px #e74e6f;
+    font-family: monospace;
+    color: rgb(80, 72, 72);
+    font-size: 10px;
+    
+}
+
+.lowcost-1 {
+    width: 100%;
+    /* height:84xpx; */
+    padding-top: 6px;
+   
+}
+.lowcost-1 img{
+    width: 68%;
+    margin:  0 50px;
+    /* height: 100px; */
+}
+.lowcost-1-2{
+    padding: 10px 0;
+    width: 100%;
+    /* height:100px; */
+}
+.lowcost-1-2 img{
+    width: 100%;
+    /* height:68px; */
+}
+
+.lw{
+    width: 100%;
+    /* height:68px; */
+}
+
+
+.lowcost-2{
+    /* display: flex;
+    flex-direction:column; */
+    /* height:100px; */
+    width: 100%;
+    /* flex-wrap: wrap; */
+    /* margin:15px 10px; */
+}
+
+.lowcost-2-1{
+    /* height: 100px; */
+    width: 100%;
+    line-height: 25px;
+    padding-bottom:20px ;
+}
+
+.lowcost-2-1{
+    /* height: 100px; */
+    width: 100%;
+    
+}
+
+.lowcost-2 img{
+    /* height:100px; */
+    width: 100%;
+}
+
+.lowcost-2-1-2 {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.lowcost-2-2 img{
+    /* height:100px; */
+    width: 50%;
+    padding-top: 12px;
+}
+    
+.lowcost-border{
+    border:solid 0.5px rgb(92, 87, 87);
+    margin:12px 0;
+    height: 0px;
+}
+
+.question{
+    width:100%;
+    /* height:840px; */
+    background-image: url("../img/pc/bg.png");
+    padding:40px 0;
+}
+.question-1{
+    width:90%;
+    /* height:820px; */
+    border: solid 3px #e74e6f;
+    background-color: white;
+    margin: 0 auto; 
+
+}
+
+.question-1 img{
+    width: 100%;
+    /* height: 760px; */
+    padding: 10px 0;
+    /* margin: 30px 0 30px 50px; */
+}
+
+}
